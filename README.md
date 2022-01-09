@@ -15,16 +15,17 @@ Our refactored algorithm performed quite a bit better. Lets's break it out by th
   The original code typically took about 1 second to complete the 2018 analysis.
   
 If we look at the flow of the original algorithm that performed analysis on all stocks, we can perhaps follow the logic a little easier in that it is going stock by stock and looping through all of the daily stock rows. The primary reason for the performance improvement is that we are only looping through the long daily list of stock values once where as the original algorithm looped through them multiple times, once for each stock. The following code in the original algorithm is the primary reason for the performance difference:  
+```
 For i = 0 To 11  
-..  
-..  
-&nbsp;&nbsp;&nbsp;&nbsp;For j = 2 To RowCount  
-&nbsp;&nbsp;&nbsp;&nbsp;..  
-&nbsp;&nbsp;&nbsp;&nbsp;..  
-&nbsp;&nbsp;&nbsp;&nbsp;End If  
-..  
+  ..  
+  ..  
+  For j = 2 To RowCount  
+    ..  
+    ..  
+  End If  
+  ..  
 End If
-
+```
 
 
 
