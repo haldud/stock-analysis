@@ -46,6 +46,6 @@ As the results showed, the primary advantage of the refactored algorithm is the 
 
 One could argue that the original algorithm was easier to understand. It iterates the data for each stock and outputs the result for each without too much complication. I found it helpful to document each line of the new algorithm's code to better understand it. The new algorithm has multiple loops - one loop to initialize the results to zero, another to iterate the daily values, and then another to write out the results. The new algorithm certainly has added complexity that may not be needed for a small set of data.
 
-Both algorithms suffer from some assumptions made on the data. For example, many of the cell references are hard-coded and relying on a specific structure. Both algorithms also have a list of specific stocks they are processing and not reading the daily values to identify unique tickers. This could become problematic as new stocks are added. In addition, both algorithms assume the data is sorted correctly by ticker and date.
+Both algorithms suffer from some assumptions made on the data. For example, many of the cell references are hard-coded, and the code relies on a specific structure. Both algorithms also have a list of specific stocks they are processing and not reading the daily values to identify unique tickers. This could become problematic as new stocks are added. In addition, both algorithms assume the data is sorted correctly by ticker and date.
 
 
