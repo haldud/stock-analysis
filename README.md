@@ -18,12 +18,12 @@ If we look at the flow of the original algorithm that performed analysis on all 
 For i = 0 To 11  
 ..  
 ..  
-    For j = 2 To RowCount  
-    ..  
-    ..  
-    End If  
+&nbsp;&nbsp;&nbsp;&nbsp;For j = 2 To RowCount  
+&nbsp;&nbsp;&nbsp;&nbsp;..  
+&nbsp;&nbsp;&nbsp;&nbsp;..  
+&nbsp;&nbsp;&nbsp;&nbsp;End If  
 ..  
-End If'  
+End If
 
 
 
