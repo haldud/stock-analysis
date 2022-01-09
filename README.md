@@ -9,7 +9,9 @@ Our refactored algorithm performed quite a bit better. Lets's break it out by th
   1. For 2017, the refactored code ran in about 113 milliseconds:  
   ![2017 Refactored](https://github.com/haldud/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)  
   The original code typically took about 900 milliseconds to complete when processing the 2017 data.
-  2. 
+  2. For 2018, the results were very similar in that we had about 700% increase in performance with the recorded time for the new algorithm being about 129 milliseconds.  
+  ![2018 Refactored](https://github.com/haldud/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)  
+  The original code typically took about 1 second to complete the 2018 analysis.
 
 ## Summary
 If we look at the flow of the original algorithm that performed analysis on all stocks, we can perhaps follow the logic a little easier in that it is going stock by stock and looping through all of the daily stock rows.
